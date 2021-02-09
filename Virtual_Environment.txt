@@ -42,7 +42,7 @@ would need. Python packages will be installed in this directory.
 
 Now, after creating a virtual environment, you need to activate it. When you open the directory, it contains folders like include, lib, script, and tcl. When you open the script folder, you'll find a file activate.bat. You can activate the virtual environment by simply clicking on this file or using the command prompt and writing the following command.
 
-3: $ .\virtualenv_name\Scripts\activate
+3: $ source virtualenv_name\Scripts\activate
 Once the virtual environment is activated, the name of your virtual environment will appear on the
 terminal's left side.
 
@@ -56,7 +56,7 @@ contain all the details related to the external packages that we have installed 
 By having the requirement.txt file, we can create our virtual machine again easily by downloading all
 the same libraries, having the same versions by a simple command.
 
-5: freeze > requirement.txt
+5: pip freeze > requirement.txt
 
 We can install all the packages one by one by a command:
 
